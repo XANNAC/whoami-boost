@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WHOAMI — Social Media Promotion Service" />
+  <title>WHOAMI // SMM Boost</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- WHOAMI CORP -->
+<div class="scanlines"></div>
+<div class="noise"></div>
+
+<!-- WHOAMI CORP -->
+<canvas id="matrixCanvas"></canvas>
+
+<!-- WHOAMI CORP -->
+<div class="boot-screen" id="bootScreen">
+  <div class="boot-content">
+    <div class="boot-line" id="bootText"></div>
+    <div class="boot-cursor">█</div>
+  </div>
+</div>
+
+<!-- WHOAMI CORP -->
+<header class="header" id="mainHeader">
+  <div class="header__logo">
+    <span class="glitch" data-text="WHOAMI">WHOAMI</span>
+    <span class="logo-tag">// SMM_BOOST v2.4</span>
+  </div>
+  <nav class="header__nav">
+    <a href="#services" data-i18n="nav.services">SERVICES</a>
+    <a href="#platforms" data-i18n="nav.platforms">PLATFORMS</a>
+    <a href="#pricing" data-i18n="nav.pricing">PRICING</a>
+    <a href="#about" data-i18n="nav.about">ABOUT</a>
+    <a href="#contact" data-i18n="nav.contact">CONTACT</a>
+  </nav>
+  <div class="header__right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="uk">UA</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="pl">PL</button>
+    </div>
+    <a href="https://t.me/Squeeze_CC" target="_blank" class="tg-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+      @Squeeze_CC
+    </a>
+  </div>
+</header>
+
+<!-- WHOAMI CORP -->
+<section class="hero" id="hero">
+  <div class="hero__terminal">
+    <div class="terminal-bar">
+      <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+      <span class="t-title">whoami@boost:~$</span>
+    </div>
+    <div class="terminal-body">
+      <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd" id="heroCmd"></span><span class="t-blink">█</span></div>
+      <div class="t-output" id="heroOutput"></div>
+    </div>
+  </div>
+  <div class="hero__content">
+    <h1 class="hero__title">
+      <span class="glitch" data-text="WHO" data-i18n="hero.who">WHO</span>
+      <span class="hero__title-sub" data-i18n="hero.tagline">ARE YOU ONLINE?</span>
+    </h1>
+    <p class="hero__desc" data-i18n="hero.desc">Real followers. Real views. Real results. No bots — only verified promotion across all major platforms.</p>
+    <div class="hero__btns">
+      <a href="#pricing" class="btn-primary" data-i18n="hero.cta">GET STARTED</a>
+      <a href="https://t.me/Squeeze_CC" target="_blank" class="btn-ghost" data-i18n="hero.contact">CONTACT US</a>
+    </div>
+    <div class="hero__stats">
+      <div class="hstat"><span class="hstat__n" data-count="150000">0</span><span data-i18n="hero.stat1">clients</span></div>
+      <div class="hstat"><span class="hstat__n" data-count="4">0</span><span data-i18n="hero.stat2">years on market</span></div>
+      <div class="hstat"><span class="hstat__n" data-count="99">0</span><span data-i18n="hero.stat3">% success rate</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHOAMI CORP -->
+<section class="platforms" id="platforms">
+  <div class="section-header">
+    <span class="section-tag">// PLATFORMS</span>
+    <h2 data-i18n="platforms.title">SUPPORTED NETWORKS</h2>
+  </div>
+  <div class="platforms-grid">
+
+    <div class="platform-card" data-platform="instagram">
+      <div class="platform-card__top">
+        <div class="platform-icon ig-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <span class="platform-name">INSTAGRAM</span>
+        <span class="platform-status online">ONLINE</span>
+      </div>
+      <p class="platform-desc" data-i18n="platforms.ig.desc">Followers, likes, views, story views, saves, comments</p>
+      <div class="platform-tags">
+        <span>+FOLLOWERS</span><span>+LIKES</span><span>+VIEWS</span><span>+SAVES</span>
+      </div>
+      <button class="platform-order btn-order" data-platform="Instagram" data-i18n="platforms.order">ORDER NOW</button>
+    </div>
+
+    <div class="platform-card" data-platform="telegram">
+      <div class="platform-card__top">
+        <div class="platform-icon tg-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+        </div>
+        <span class="platform-name">TELEGRAM</span>
+        <span class="platform-status online">ONLINE</span>
+      </div>
+      <p class="platform-desc" data-i18n="platforms.tg.desc">Channel subscribers, post views, reactions, poll votes</p>
+      <div class="platform-tags">
+        <span>+SUBSCRIBERS</span><span>+VIEWS</span><span>+REACTIONS</span>
+      </div>
+      <button class="platform-order btn-order" data-platform="Telegram" data-i18n="platforms.order">ORDER NOW</button>
+    </div>
+
+    <div class="platform-card" data-platform="youtube">
+      <div class="platform-card__top">
+        <div class="platform-icon yt-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+        </div>
+        <span class="platform-name">YOUTUBE</span>
+        <span class="platform-status online">ONLINE</span>
+      </div>
+      <p class="platform-desc" data-i18n="platforms.yt.desc">Subscribers, video views, likes, comments, watch time</p>
+      <div class="platform-tags">
+        <span>+SUBSCRIBERS</span><span>+VIEWS</span><span>+LIKES</span><span>+WATCHTIME</span>
+      </div>
+      <button class="platform-order btn-order" data-platform="YouTube" data-i18n="platforms.order">ORDER NOW</button>
+    </div>
+
+    <div class="platform-card" data-platform="tiktok">
+      <div class="platform-card__top">
+        <div class="platform-icon tt-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.23 8.23 0 004.84 1.56V6.79a4.85 4.85 0 01-1.07-.1z"/></svg>
+        </div>
+        <span class="platform-name">TIKTOK</span>
+        <span class="platform-status online">ONLINE</span>
+      </div>
+      <p class="platform-desc" data-i18n="platforms.tt.desc">Followers, video views, likes, shares, comments</p>
+      <div class="platform-tags">
+        <span>+FOLLOWERS</span><span>+VIEWS</span><span>+LIKES</span><span>+SHARES</span>
+      </div>
+      <button class="platform-order btn-order" data-platform="TikTok" data-i18n="platforms.order">ORDER NOW</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHOAMI CORP -->
+<section class="services" id="services">
+  <div class="section-header">
+    <span class="section-tag">// SERVICES</span>
+    <h2 data-i18n="services.title">WHAT WE DO</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">⚡</div>
+      <h3 data-i18n="srv.fast.title">FAST DELIVERY</h3>
+      <p data-i18n="srv.fast.desc">Orders start within 0–15 minutes. No delays, no excuses.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🛡️</div>
+      <h3 data-i18n="srv.safe.title">ACCOUNT SAFE</h3>
+      <p data-i18n="srv.safe.desc">We use only white-hat methods. Your account is never at risk.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔄</div>
+      <h3 data-i18n="srv.refill.title">REFILL GUARANTEE</h3>
+      <p data-i18n="srv.refill.desc">30-day refill guarantee on all follower packages.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🌍</div>
+      <h3 data-i18n="srv.geo.title">GEO TARGETING</h3>
+      <p data-i18n="srv.geo.desc">Target by country, language or demographic. Real precision.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📊</div>
+      <h3 data-i18n="srv.analytics.title">ANALYTICS</h3>
+      <p data-i18n="srv.analytics.desc">Track your growth in real-time via our live dashboard.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">💬</div>
+      <h3 data-i18n="srv.support.title">24/7 SUPPORT</h3>
+      <p data-i18n="srv.support.desc">Our team is always online. Write us any time on Telegram.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHOAMI CORP -->
+<section class="pricing" id="pricing">
+  <div class="section-header">
+    <span class="section-tag">// PRICING</span>
+    <h2 data-i18n="pricing.title">CHOOSE YOUR PLAN</h2>
+  </div>
+  <div class="pricing-tabs">
+    <button class="ptab active" data-tab="instagram">Instagram</button>
+    <button class="ptab" data-tab="telegram">Telegram</button>
+    <button class="ptab" data-tab="youtube">YouTube</button>
+    <button class="ptab" data-tab="tiktok">TikTok</button>
+  </div>
+  <div class="pricing-grid" id="pricingGrid"></div>
+</section>
+
+<!-- WHOAMI CORP -->
+<section class="about" id="about">
+  <div class="about__terminal">
+    <div class="terminal-bar">
+      <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+      <span class="t-title">whoami@server:~$ cat about.txt</span>
+    </div>
+    <div class="terminal-body about-terminal-body">
+      <div class="about-lines" id="aboutLines"></div>
+    </div>
+  </div>
+  <div class="about__stats">
+    <div class="about-stat">
+      <span class="about-stat__n">2022</span>
+      <span data-i18n="about.founded">Founded</span>
+    </div>
+    <div class="about-stat">
+      <span class="about-stat__n">150K+</span>
+      <span data-i18n="about.clients">Happy clients</span>
+    </div>
+    <div class="about-stat">
+      <span class="about-stat__n">4</span>
+      <span data-i18n="about.networks">Networks</span>
+    </div>
+    <div class="about-stat">
+      <span class="about-stat__n">24/7</span>
+      <span data-i18n="about.support">Support</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHOAMI CORP -->
+<section class="contact" id="contact">
+  <div class="section-header">
+    <span class="section-tag">// CONTACT</span>
+    <h2 data-i18n="contact.title">GET IN TOUCH</h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-card__icon tg-icon-c">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+      </div>
+      <h3>TELEGRAM</h3>
+      <p data-i18n="contact.tg.desc">Write us directly. Fastest response guaranteed.</p>
+      <a href="https://t.me/Squeeze_CC" target="_blank" class="contact-link tg-link">
+        @Squeeze_CC →
+      </a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card__icon ig-icon-c">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </div>
+      <h3>INSTAGRAM</h3>
+      <p data-i18n="contact.ig.desc">Follow us for updates, promos and case studies.</p>
+      <a href="https://www.instagram.com/whoamg" target="_blank" class="contact-link ig-link">
+        @whoamg →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHOAMI CORP -->
+<footer class="footer">
+  <div class="footer__logo glitch" data-text="WHOAMI">WHOAMI</div>
+  <div class="footer__links">
+    <a href="#services" data-i18n="nav.services">SERVICES</a>
+    <a href="#platforms" data-i18n="nav.platforms">PLATFORMS</a>
+    <a href="#pricing" data-i18n="nav.pricing">PRICING</a>
+    <a href="#about" data-i18n="nav.about">ABOUT</a>
+    <a href="https://t.me/Squeeze_CC" target="_blank">TELEGRAM</a>
+    <a href="https://www.instagram.com/whoamg" target="_blank">INSTAGRAM</a>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2022–2026 WHOAMI SMM BOOST. All rights reserved.</span>
+    <span class="footer__sys">SYS: ONLINE | UPTIME: 99.9% | BUILD: v2.4.1</span>
+  </div>
+</footer>
+
+<!-- WHOAMI CORP -->
+<div class="modal-overlay" id="modalOverlay"></div>
+<div class="modal" id="orderModal">
+  <div class="modal__header">
+    <span class="modal__title" id="modalTitle">ORDER // INSTAGRAM</span>
+    <button class="modal__close" id="modalClose">✕</button>
+  </div>
+  <div class="modal__body">
+    <div class="modal__field">
+      <label data-i18n="modal.service">Service type</label>
+      <select class="modal__input modal__select" id="orderService"></select>
+    </div>
+    <div class="modal__field">
+      <label data-i18n="modal.url">Profile / Link URL</label>
+      <input type="text" class="modal__input" id="orderUrl" placeholder="https://..." />
+    </div>
+    <div class="modal__field">
+      <label data-i18n="modal.qty">Quantity</label>
+      <input type="number" class="modal__input" id="orderQty" min="100" step="100" value="1000" />
+    </div>
+    <div class="modal__field">
+      <label data-i18n="modal.note">Note (optional)</label>
+      <textarea class="modal__input modal__textarea" id="orderNote" placeholder="Any special requirements..."></textarea>
+    </div>
+    <div class="modal__total">
+      <span data-i18n="modal.contact_via">Send order via Telegram:</span>
+      <a href="https://t.me/Squeeze_CC" target="_blank" class="modal__tg-btn">
+        @Squeeze_CC →
+      </a>
+    </div>
+    <button class="btn-primary modal__submit" id="modalSubmit" data-i18n="modal.submit">SEND TO TELEGRAM</button>
+  </div>
+</div>
+
+<!-- WHOAMI CORP -->
+<div class="toast" id="toast"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
